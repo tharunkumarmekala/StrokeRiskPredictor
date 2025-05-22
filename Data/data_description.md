@@ -6,9 +6,11 @@ The dataset used in this study was acquired from a publicly available online hea
    
 To prepare the dataset for analysis, all variables underwent transformation into standardized categorical formats. This involved encoding the variables into numerical representations suitable for machine learning algorithms. Based on specific criteria or groupings, variables were converted into integer codes, using binary values (0 or 1) or other numerical values like 0, 1, 2, or 3, depending on the variable's nature. This encoding process was applied uniformly to both the original features and the synthetically generated variables (Cholesterol, Hypertension, Atrial Fibrillation), ensuring they were also converted into these defined integer categories. The final dataset contained all features, including synthetic ones, in a numerical, integer-encoded format.
 
-3. Handling Missing Data
+3. Data Preprocessing
 
-Missing values, specifically 201 entries in the BMI column (3.93%), were addressed. Given the categorical nature of the processed BMI variable, mode imputation was used for the BMI column to preserve data integrity. The article, however, states that an Iterative Imputer was applied using a Random Forest Regressor for the initial, likely numerical, BMI column.
+- Handled missing values in BMI and other features using mean imputation.
+- Encoded categorical variables for model compatibility.
+- Performed feature scaling where necessary.
 
 4. Dataset Balancing
 
