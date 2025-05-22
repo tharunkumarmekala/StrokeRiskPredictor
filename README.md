@@ -79,7 +79,7 @@ This project is open source and available under the [MIT License](LICENSE).
 For questions or contributions, please contact:
 
 Tharun Kumar Mekala  
-Email: [tharunkumar39429@gmail.com]  
+Email: tharunkumar39429@gmail.com 
 GitHub: [https://github.com/tharunkumarmekala](https://github.com/tharunkumarmekala)
 
 
