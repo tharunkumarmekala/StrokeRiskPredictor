@@ -21,7 +21,7 @@ This repository contains the full source code, pretrained models, and web applic
 - `app.py` — Flask backend server handling requests and running predictions.
 - `index.html` — Frontend web interface with dropdown input options.
 - `models/` — Pretrained machine learning model files saved with joblib.
-- `dataset/` — Stroke dataset used for training and evaluation.
+- `Dataset.csv` — Stroke dataset used for training and evaluation.
 - `screenshots/` — Images demonstrating the input interface and dynamic output display.
 - `requirements.txt` — Python dependencies for running the application.
 
