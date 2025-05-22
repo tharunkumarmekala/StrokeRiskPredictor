@@ -25,15 +25,18 @@ To further augment the dataset and enhance generalization, an additional 1,500 s
 After rebalancing and synthetic augmentation, the final dataset comprised 2,000 observations with equal representation of stroke and non-stroke cases. Each feature was integer encoded and organized in a fixed sequence: Age, Sex, BMI, Cholesterol, Hypertension, Atrial Fibrillation, Diabetes, Smoking, Previous Stroke, and Stroke (target variable). This structured and discretized format improved interpretability and computational efficiency. The resulting dataset was clean, balanced, and well-suited for machine learning classification tasks. The feature definitions and encoding scheme are detailed in Table.
 
 Table: Clinical and Demographic Variables with Encoding
-Feature Name	Description	Type
-Age	Patient's age category (1 = Young, 2 = Middle, 3 = Elderly)	Categorical
-Sex	Biological sex (0 = Female, 1 = Male)	Binary
-BMI	Body Mass Index (0–3 scale based on range)	Ordinal
-Cholesterol	Cholesterol level (0 = Normal, 1 = High, 2 = Very High)	Ordinal
-Hypertension	Hypertension stage (0 = None, 1 = Stage 1, 2 = Stage 2)	Ordinal
-Atrial Fibrillation	Presence of AFib (0 = No, 1 = Yes)	Binary
-Diabetes	Diabetes diagnosis (0 = No, 1 = Yes)	Binary
-Smoking	Smoking status (0 = Non smoker, 1 = Smoker)	Binary
-Previous Stroke	History of prior stroke (0 = No, 1 = Yes)	Binary
-Stroke (Target)	Stroke outcome (0 = No, 1 = Yes)	Binary
+## Feature Description and Encoding
+
+| Feature Name         | Description                                                   | Type        | Encoding                          |
+|----------------------|---------------------------------------------------------------|-------------|------------------------------------|
+| Age                  | Patient's age category (1 = Young, 2 = Middle, 3 = Elderly)    | Categorical | 1, 2, 3                            |
+| Sex                  | Biological sex (0 = Female, 1 = Male)                          | Binary      | 0, 1                              |
+| BMI                  | Body Mass Index (0–3 scale based on range)                    | Ordinal     | 0, 1, 2, 3                        |
+| Cholesterol          | Cholesterol level (0 = Normal, 1 = High, 2 = Very High)        | Ordinal     | 0, 1, 2                          |
+| Hypertension         | Hypertension stage (0 = None, 1 = Stage 1, 2 = Stage 2)        | Ordinal     | 0, 1, 2                          |
+| Atrial Fibrillation  | Presence of AFib (0 = No, 1 = Yes)                             | Binary      | 0, 1                              |
+| Diabetes             | Diabetes diagnosis (0 = No, 1 = Yes)                           | Binary      | 0, 1                              |
+| Smoking              | Smoking status (0 = Non-smoker, 1 = Smoker)                   | Binary      | 0, 1                              |
+| Previous Stroke      | History of prior stroke (0 = No, 1 = Yes)                      | Binary      | 0, 1                              |
+| Stroke (Target)      | Stroke outcome (0 = No, 1 = Yes)                               | Binary      | 0, 1                              |
 
