@@ -145,3 +145,6 @@ Contributions to this project are welcome! Feel free to fork the repository, mak
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+![image](https://github.com/user-attachments/assets/063f4195-e278-4592-8b86-08dab7a8b6c8)
+
+
