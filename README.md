@@ -1,150 +1,94 @@
-# StrokeRiskPredictor
-AI-powered stroke risk prediction web app using XGBoost with SHAP-based explainability and personalized health &amp; diet recommendations. Built with Flask and deployed on Render.
 
-Here's a detailed README template for your project on GitHub:
+# Stroke Risk Predictor
 
+This repository contains the full source code, pretrained models, and web application for a stroke risk prediction system built using machine learning techniques, primarily XGBoost and ensemble methods. The system provides real-time stroke risk assessment based on clinical and demographic inputs collected via a user-friendly web interface.
 
-
-# Stroke Risk Prediction Model
-
-This project is aimed at predicting the risk of stroke using machine learning techniques. The model evaluates various health parameters such as age, sex, BMI, cholesterol levels, hypertension, and more to determine the likelihood of a person experiencing a stroke. The primary goal is to provide insights into stroke risk and offer personalized recommendations for lifestyle changes based on the prediction results.
-
-## Table of Contents
-- [Project Overview](#project-overview)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Model Training](#model-training)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Project Overview
-
-This project implements a **stroke risk prediction model** using the **XGBoost** algorithm. The model is trained using a dataset that includes various health-related features such as:
-- Age
-- Sex
-- Hypertension
-- Heart Disease
-- Average Glucose Levels
-- BMI
-- Smoking Status
-- Previous Stroke
-
-The goal is to predict the likelihood of a stroke occurring, with the following output:
-- **Risk Percentage**: The likelihood of having a stroke.
-- **Risk Level**: Categorized into **Low**, **Medium**, or **High** risk.
-- **Personalized Recommendations**: Tailored health advice based on the risk level, including lifestyle suggestions and food recommendations.
+---
 
 ## Features
 
-- **Stroke Risk Prediction**: Predicts the probability of stroke for an individual based on input health data.
-- **Personalized Recommendations**: Suggests health practices and food plans based on predicted risk.
-- **Data Preprocessing**: Categorical variables are handled, and missing data is imputed before model training.
-- **Model Explainability**: Uses SHAP (SHapley Additive exPlanations) to interpret and explain the model's predictions.
+- **User-friendly Frontend:** Input form with dropdown menus for easy selection of clinical and demographic variables.
+- **Backend Analysis:** Python Flask server processes inputs and generates stroke risk predictions using pretrained models.
+- **Dynamic Output:** Real-time display of personalized stroke risk scores and health recommendations.
+- **Model Explainability:** Feature importance analysis provides clinical interpretability.
+- **Optimized Threshold:** Improved sensitivity for stroke detection through threshold tuning.
+- **Ensemble Modeling:** Combines XGBoost, Random Forest, and Gradient Boosting for enhanced robustness.
 
-## Installation
+---
 
-### Prerequisites
+## Repository Contents
 
-1. **Python 3.7+**: Ensure that you have Python installed on your system. If not, download and install it from the official Python website.
-2. **pip**: Python's package installer for installing dependencies.
+- `app.py` — Flask backend server handling requests and running predictions.
+- `index.html` — Frontend web interface with dropdown input options.
+- `models/` — Pretrained machine learning model files saved with joblib.
+- `dataset/` — Stroke dataset used for training and evaluation.
+- `screenshots/` — Images demonstrating the input interface and dynamic output display.
+- `requirements.txt` — Python dependencies for running the application.
 
-### Steps to Install
+---
 
-1. Clone the repository:
+## Setup and Usage
 
-```bash
-git clone https://github.com/yourusername/repositoryname.git
-cd repositoryname
-```
-
-2. Create a virtual environment:
-
-```bash
-python3 -m venv venv
-```
-
-3. Activate the virtual environment:
-   - On Windows:
+1. **Clone the repository:**
 
    ```bash
-   .\venv\Scripts\activate
+   git clone https://github.com/tharunkumarmekala/StrokeRiskPredictor.git
+   cd StrokeRiskPredictor
    ```
 
-   - On macOS/Linux:
+2. **Install dependencies:**
 
    ```bash
-   source venv/bin/activate
+   pip install -r requirements.txt
    ```
 
-4. Install the required dependencies:
+3. **Run the Flask app:**
 
-```bash
-pip install -r requirements.txt
-```
+   ```bash
+   python app.py
+   ```
 
-## Usage
+4. **Access the web interface:**
 
-### Running the Model
+   Open your browser and navigate to `http://localhost:5000`
 
-1. Navigate to the project directory.
-2. Use the provided Flask app to input health data via a web interface.
-3. The app will output a stroke risk prediction and personalized recommendations.
+5. **Input data using the dropdown menus, submit, and view real-time stroke risk prediction and recommendations.**
 
-Run the Flask application:
+---
 
-```bash
-python app.py
-```
+## Dataset
 
-Visit the application in your browser at `http://127.0.0.1:5000/`.
+The dataset used for training the models is included in the `data/` directory. It contains clinical and demographic features relevant to stroke risk prediction.
 
-### Inputs
+---
 
-- **Age**: The age of the individual.
-- **Sex**: The gender of the individual (Male/Female).
-- **BMI**: The Body Mass Index of the individual.
-- **Cholesterol**: Cholesterol level, categorized as low, normal, or high.
-- **Hypertension**: Whether the individual has hypertension (Yes/No).
-- **Atrial Fibrillation**: Presence of irregular heartbeat (Yes/No).
-- **Smoking**: Whether the individual smokes (Yes/No).
-- **Previous Stroke**: Whether the individual has had a stroke before (Yes/No).
+## Screenshots
 
-### Output
+Two key screenshots demonstrating the system workflow are included in the `screenshots/` folder:
 
-- **Risk Percentage**: The probability of stroke.
-- **Risk Level**: Categorized as low, medium, or high.
-- **Personalized Recommendations**: Including lifestyle and dietary suggestions.
+- Input form with dropdown selections for clinical variables.
+- Dynamic display showing the predicted stroke risk and personalized recommendations after backend processing.
 
-## Model Training
-
-The model is based on **XGBoost**, which is a powerful gradient boosting algorithm. The training process involves the following steps:
-- Data Preprocessing: Handle missing values, encode categorical variables, and scale the data.
-- Model Tuning: Hyperparameters are optimized using techniques like **GridSearchCV**.
-- Model Evaluation: The model is evaluated using metrics such as **accuracy**, **AUC**, and **F1 score**.
-
-### Hyperparameters Tuned:
-- Learning rate
-- Max depth
-- Number of estimators
-- Subsample ratio
-
-## Contributing
-
-Contributions to this project are welcome! Feel free to fork the repository, make improvements, and create pull requests.
-
-### How to Contribute:
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Make your changes.
-4. Commit your changes (`git commit -am 'Add new feature'`).
-5. Push to the branch (`git push origin feature-branch`).
-6. Create a new Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+These illustrate the smooth and practical user experience from data entry to results visualization.
 
 ![image](https://github.com/user-attachments/assets/063f4195-e278-4592-8b86-08dab7a8b6c8)
 
+---
 
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+## Contact
+
+For questions or contributions, please contact:
+
+Tharun Kumar Mekala  
+Email: [your-email@example.com]  
+GitHub: [https://github.com/tharunkumarmekala](https://github.com/tharunkumarmekala)
+
+---
+
+Thank you for exploring this stroke risk prediction system.
