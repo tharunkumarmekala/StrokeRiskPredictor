@@ -3,7 +3,6 @@
 
 This repository contains the full source code, pretrained models, and web application for a stroke risk prediction system built using machine learning techniques, primarily XGBoost and ensemble methods. The system provides real-time stroke risk assessment based on clinical and demographic inputs collected via a user-friendly web interface.
 
----
 
 ## Features
 
@@ -14,7 +13,6 @@ This repository contains the full source code, pretrained models, and web applic
 - **Optimized Threshold:** Improved sensitivity for stroke detection through threshold tuning.
 - **Ensemble Modeling:** Combines XGBoost, Random Forest, and Gradient Boosting for enhanced robustness.
 
----
 
 ## Repository Contents
 
@@ -24,8 +22,6 @@ This repository contains the full source code, pretrained models, and web applic
 - `Dataset.csv` — Stroke dataset used for training and evaluation.
 - `screenshots/` — Images demonstrating the input interface and dynamic output display.
 - `requirements.txt` — Python dependencies for running the application.
-
----
 
 ## Setup and Usage
 
@@ -60,7 +56,6 @@ This repository contains the full source code, pretrained models, and web applic
 
 The dataset used for training the models is included in the `data/` directory. It contains clinical and demographic features relevant to stroke risk prediction.
 
----
 
 ## Screenshots
 
@@ -73,22 +68,19 @@ These illustrate the smooth and practical user experience from data entry to res
 
 ![image](https://github.com/user-attachments/assets/063f4195-e278-4592-8b86-08dab7a8b6c8)
 
----
 
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
 
----
 
 ## Contact
 
 For questions or contributions, please contact:
 
 Tharun Kumar Mekala  
-Email: [your-email@example.com]  
+Email: [tharunkumar39429@gmail.com]  
 GitHub: [https://github.com/tharunkumarmekala](https://github.com/tharunkumarmekala)
 
----
 
 Thank you for exploring this stroke risk prediction system.
